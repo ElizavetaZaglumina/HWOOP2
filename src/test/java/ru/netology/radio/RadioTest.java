@@ -116,7 +116,7 @@ public class RadioTest {
     public void shouldNotIncreaseVolume() {
         Radio radio = new Radio();
 
-        radio.setCurrentVolume(100);
+        radio.setCurrentVolume(101);
         radio.increaseVolume();
 
         int actual = radio.getCurrentVolume();
@@ -129,7 +129,7 @@ public class RadioTest {
     public void shouldNotDecreaseVolume() {
         Radio radio = new Radio();
 
-        radio.setCurrentVolume(0);
+        radio.setCurrentVolume(-1);
         radio.decreaseVolume();
 
         int actual = radio.getCurrentVolume();
